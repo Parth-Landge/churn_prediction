@@ -7,7 +7,7 @@ import numpy as np
 # st.cache_resource ensures the model is only loaded once, making the app faster
 @st.cache_resource
 def load_model():
-    with open('model.pkl', 'rb') as file:
+    with open('model.sav', 'rb') as file:
         return pickle.load(file)
 
 model = load_model()
