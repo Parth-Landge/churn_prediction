@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+scikit-learn
+xgboost 
+
+http://googleusercontent.com/immersive_entry_chip/0
+
+The moment you hit enter on that last command, a local web server will spin up, and your default web browser will automatically open a new tab showing your live, interactive application!
+
+**A Crucial Note Before You Run:** Look at **Section 4** in the code above. Because your model expects ~34 columns from your one-hot encoding, you must list all of them in that `input_data` dictionary. If you leave even one column out, the model will throw a shape mismatch error. 
+
+Let me know when you get it running, or if you need help mapping the rest of those specific True/False columns!
