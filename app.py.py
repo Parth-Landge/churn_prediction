@@ -1,8 +1,3 @@
-### Step 3: The Streamlit Code (`app.py`)
-Because you used `pd.get_dummies(drop_first=True)`, your model expects around 34 specific columns (like `Gender_Male`, `Internet Service_Fiber optic`, etc.). 
-
-The trick to Streamlit is to ask the user simple questions, and then let Python translate their answers into the exact 1s and 0s your model expects. Here is your starter code.
-
 ```python
 import streamlit as st
 import pandas as pd
