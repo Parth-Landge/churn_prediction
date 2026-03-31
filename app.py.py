@@ -81,17 +81,5 @@ if st.button("Predict Churn Risk", type="primary"):
             
     except Exception as e:
         st.error(f"Error making prediction. Make sure all columns exactly match your training data! Details: {e}")
-```
 
-### Step 4: How to Run Your App
-Running a Streamlit app is wonderfully simple. 
 
-1. Open your **Terminal** or **Anaconda Prompt**.
-2. Navigate to your project folder using the `cd` command (e.g., `cd path/to/your/telco_churn_app`).
-3. Install your libraries (you only need to do this once):
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Start the Streamlit server:
-   ```bash
-   streamlit run app.py
