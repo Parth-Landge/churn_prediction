@@ -1,0 +1,33 @@
+#Telco Customer Churn Prediction: End-to-End ML Pipeline
+
+### [Click Here to View the Live Web App](https://churn-prediction-parth7.streamlit.app/)
+
+##The Business Problem
+In the telecommunications industry, retaining an existing customer is significantly cheaper than acquiring a new one. This project utilizes the IBM Telco Customer Churn dataset to identify the key behavioral and demographic indicators of customer attrition. 
+
+The goal of this project is two-fold:
+1. Analyze the data to extract actionable business insights regarding why customers leave.
+2. Build and Deploy a Machine Learning model capable of predicting the churn risk of individual customers based on 33 unique features.
+
+##Key Business Insights (EDA)
+Extensive Exploratory Data Analysis revealed several critical drivers of customer churn:
+The Loyalty Window: The highest risk of churn occurs within the first 12 months. Customers who cross the 1-year mark show significantly higher retention rates.
+Price Sensitivity: There is a direct positive correlation between higher monthly charges and churn probability.
+Service Vulnerabilities: Customers utilizing 'Fiber Optic' internet and 'Electronic Check' payments churn at drastically higher rates than other segments, indicating potential friction points in the user experience.
+Protective Add-ons: Customers enrolled in 'Tech Support' or 'Online Security' are highly insulated against churn.
+
+##Machine Learning Pipeline
+This project is built on a robust, end-to-end data science pipeline:
+* Data Preprocessing:** Handled hidden missing values, removed target leakage variables, and utilized One-Hot and Ordinal Encoding for categorical features.
+* Handling Class Imbalance:** The original dataset suffered from a 74:26 class imbalance. I implemented **SMOTEENN** (Synthetic Minority Over-sampling Technique + Edited Nearest Neighbors) to synthetically balance the training data, drastically improving the model's Recall score for the minority "Churn" class.
+* Modeling: Trained and evaluated multiple algorithms, ultimately deploying a highly accurate predictive model saved via `pickle`.
+* Deployment: Developed a front-end interactive web application using **Streamlit**, allowing users to input live customer data and receive instant churn risk assessments.
+
+## How to Run Locally
+
+To run this project on your local machine, follow these steps:
+
+1. Clone the repository:
+    bash
+   git clone [https://github.com/YourUsername/churn_prediction.git](https://github.com/YourUsername/churn_prediction.git)
+   cd churn_prediction
